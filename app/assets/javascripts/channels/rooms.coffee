@@ -14,7 +14,7 @@ jQuery(document).on 'turbolinks:load', ->
 
       received: (data) ->
 
-        $('#messages').append()
+        $('#messages').prepend(data['message'])
  
 
       send_message: (message, chat_room_id) ->
